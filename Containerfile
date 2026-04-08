@@ -2,7 +2,7 @@ FROM frappe/erpnext:v15
 
 ARG APPS_JSON_BASE64=W3sidXJsIjogImh0dHBzOi8vZ2l0aHViLmNvbS9mcmFwcGUvY3JtIiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1In1d
 
-RUN echo "${APPS_JSON_BASE64}" | base64 -d > /apps.json && \
+RUN printf '%s' "$APPS_JSON_BASE64" | base64 -d > /apps.json && \
     cat /apps.json
 
 USER frappe
