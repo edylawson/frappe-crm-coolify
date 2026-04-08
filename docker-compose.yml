@@ -1,5 +1,8 @@
 x-frappe-image: &frappe-image
-  image: ${FRAPPE_IMAGE}
+  build:
+    context: .
+    dockerfile: Containerfile
+  image: frappe-crm-custom:v15
   restart: unless-stopped
   volumes:
     - sites:/home/frappe/frappe-bench/sites
