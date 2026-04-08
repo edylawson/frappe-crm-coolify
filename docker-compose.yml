@@ -55,8 +55,7 @@ services:
             --mariadb-root-password=${DB_ROOT_PASSWORD}
             --admin-password=${ADMIN_PASSWORD}
             --no-mariadb-socket
-            --install-app crm
-            --install-app frappe_whatsapp;
+            --install-app crm;
         else
           echo "Site ja existe, pulando criacao.";
         fi;

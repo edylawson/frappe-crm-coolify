@@ -2,9 +2,5 @@
   {
     "url": "https://github.com/frappe/crm",
     "branch": "version-15"
-  },
-  {
-    "url": "https://github.com/shridarpatil/frappe_whatsapp",
-    "branch": "main"
   }
 ]
