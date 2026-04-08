@@ -1,4 +1,4 @@
-FROM ghcr.io/frappe/erpnext:v15
+FROM frappe/erpnext:v15
 
 ARG APPS_JSON_BASE64=W3sidXJsIjogImh0dHBzOi8vZ2l0aHViLmNvbS9mcmFwcGUvY3JtIiwgImJyYW5jaCI6ICJ2ZXJzaW9uLTE1In0sIHsidXJsIjogImh0dHBzOi8vZ2l0aHViLmNvbS9zaHJpZGFycGF0aWwvZnJhcHBlX3doYXRzYXBwIiwgImJyYW5jaCI6ICJtYWluIn1d
 
